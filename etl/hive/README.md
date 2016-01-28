@@ -11,3 +11,12 @@ Make sure sqoop has access to your SQL driver. See more info here: http://www.cl
 - Update your JDBC Url and username (You will be prompted for your password)
 
 ### 3b. Option 2: Import Tables 1 by 1
+- See importIndividual.sh
+- Update `person` with whichever tables you wish to import
+- Update -m to represent the number of mappers you wish sqoop to use
+- Update your JDBC Url and username (You will be prompted for your password)
+
+
+
+#### Notes
+- See https://sqoop.apache.org/docs/1.4.1-incubating/SqoopUserGuide.html for additional sqoop parameters and options
