@@ -33,3 +33,5 @@ Time taken: 0.938 seconds, Fetched: 5 row(s)
 
 #### Notes
 - See https://sqoop.apache.org/docs/1.4.1-incubating/SqoopUserGuide.html for additional sqoop parameters and options
+- See https://gist.github.com/Karthick333031/f6ddf86f62a04988a15e for info on setting up sqoop on Amazon EMR
+
