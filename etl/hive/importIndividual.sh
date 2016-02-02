@@ -7,4 +7,14 @@ sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv
 sqoop import -m 1 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table concept_ancestor --split-by ancestor_concept_id --hive-import -hive-table cdmv5.concept_ancestor
 sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table concept_class --split-by concept_class_id --hive-import -hive-table cdmv5.concept_class
 sqoop import -m 1 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table concept_relationship  --hive-import -hive-table cdmv5.concept_relationship
-
+sqoop import -m 1 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table concept_synonym  --hive-import -hive-table cdmv5.concept_synonym
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table condition_era --split-by condition_era_id --hive-import -hive-table cdmv5.condition_era
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table condition_occurrence --split-by condition_occurrence_id --hive-import -hive-table cdmv5.condition_occurrence
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table death --split-by person_id --hive-import -hive-table cdmv5.death
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table device_cost --split-by device_cost_id --hive-import -hive-table cdmv5.device_cost
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table device_exposure --split-by device_exposure_id --hive-import -hive-table cdmv5.device_exposure
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table domain --split-by domain_id --hive-import -hive-table cdmv5.domain
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table dose_era --split-by dose_era_id --hive-import -hive-table cdmv5.dose_era
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table drug_cost --split-by drug_cost_id --hive-import -hive-table cdmv5.drug_cost
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table drug_era --split-by drug_era_id --hive-import -hive-table cdmv5.drug_era
+sqoop import -m 2 --connect jdbc:postgresql://laertes.ohdsi.org:5432/vocabularyv5 --username=charity -P --table drug_exposure --split-by drug_exposure_id --hive-import -hive-table cdmv5.drug_exposure
